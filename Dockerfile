@@ -1,11 +1,11 @@
 FROM docker:latest
 
 ENV GLIBC_VERSION 2.23-r3
-ENV DOCKER_COMPOSE_VERSION 1.8.0
-ENV RANCHER_COMPOSE_VERSION v0.9.2
+ENV DOCKER_COMPOSE_VERSION 1.8.1
+ENV RANCHER_COMPOSE_VERSION v0.10.0
 
 # defaults
-RUN apk --update add git bash ca-certificates py-pip
+RUN apk --update add git bash nodejs py-pip ca-certificates
 
 # glibc
 ADD https://raw.githubusercontent.com/sgerrand/alpine-pkg-glibc/master/sgerrand.rsa.pub /etc/apk/keys/sgerrand.rsa.pub
