@@ -1,8 +1,8 @@
 FROM docker:latest
 
 ENV GLIBC_VERSION 2.23-r3
-ENV DOCKER_COMPOSE_VERSION 1.8.1
-ENV RANCHER_COMPOSE_VERSION v0.9.2
+ENV DOCKER_COMPOSE_VERSION 1.11.2
+ENV RANCHER_COMPOSE_VERSION v0.12.1
 
 # defaults
 RUN apk --update add git bash nodejs py-pip build-base ca-certificates
